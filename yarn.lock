@@ -230,7 +230,7 @@
   dependencies:
     "@babel/types" "^7.18.6"
 
-"@babel/helper-validator-identifier@^7.18.6":
+"@babel/helper-validator-identifier@^7.16.7", "@babel/helper-validator-identifier@^7.18.6":
   "integrity" "sha512-MmetCkz9ej86nJQV+sFCxoGGrUbU3q02kgLciwkrt9QqEB7cP39oKEY0PakknEO0Gu20SskMRi+AYZ3b1TpN9g=="
   "resolved" "https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.18.6.tgz"
   "version" "7.18.6"
@@ -1046,12 +1046,20 @@
     "debug" "^4.1.0"
     "globals" "^11.1.0"
 
-"@babel/types@^7.0.0", "@babel/types@^7.18.6", "@babel/types@^7.18.7", "@babel/types@^7.18.8", "@babel/types@^7.3.0", "@babel/types@^7.3.3", "@babel/types@^7.4.4":
+"@babel/types@^7.0.0", "@babel/types@^7.18.6", "@babel/types@^7.18.7", "@babel/types@^7.18.8", "@babel/types@^7.3.0", "@babel/types@^7.3.3", "@babel/types@^7.4.4", "@babel/types@7.18.8":
   "integrity" "sha512-qwpdsmraq0aJ3osLJRApsc2ouSJCdnMeZwB0DhbtHAtRpZNZCdlbRnHIgcRKzdE1g0iOGg644fzjOBcdOz9cPw=="
   "resolved" "https://registry.npmjs.org/@babel/types/-/types-7.18.8.tgz"
   "version" "7.18.8"
   dependencies:
     "@babel/helper-validator-identifier" "^7.18.6"
+    "to-fast-properties" "^2.0.0"
+
+"@babel/types@7.18.2":
+  "integrity" "sha512-0On6B8A4/+mFUto5WERt3EEuG1NznDirvwca1O8UwXQHVY8g3R7OzYgxXdOfMwLO08UrpUD/2+3Bclyq+/C94Q=="
+  "resolved" "https://registry.npmjs.org/@babel/types/-/types-7.18.2.tgz"
+  "version" "7.18.2"
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.16.7"
     "to-fast-properties" "^2.0.0"
 
 "@bcoe/v8-coverage@^0.2.3":
@@ -3248,7 +3256,7 @@
   "resolved" "https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz"
   "version" "1.0.3"
 
-"escape-string-regexp@^1.0.2", "escape-string-regexp@^1.0.5":
+"escape-string-regexp@^1.0.2", "escape-string-regexp@^1.0.3", "escape-string-regexp@^1.0.5":
   "integrity" "sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg=="
   "resolved" "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz"
   "version" "1.0.5"
@@ -3547,6 +3555,11 @@
   dependencies:
     "assign-symbols" "^1.0.0"
     "is-extendable" "^1.0.1"
+
+"extend@^3.0.1":
+  "integrity" "sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g=="
+  "resolved" "https://registry.npmjs.org/extend/-/extend-3.0.2.tgz"
+  "version" "3.0.2"
 
 "external-editor@^2.0.1":
   "integrity" "sha512-bSn6gvGxKt+b7+6TKEv1ZycHleA7aHhRHyAqJyp5pbUFuYYNIzpZnQDk7AsYckyWdEnTeAnay0aCy2aV6iTk9A=="
@@ -5612,7 +5625,7 @@
     "snapdragon" "^0.8.1"
     "to-regex" "^3.0.2"
 
-"micromatch@^4.0.4":
+"micromatch@^4.0.4", "micromatch@^4.0.5":
   "integrity" "sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA=="
   "resolved" "https://registry.npmjs.org/micromatch/-/micromatch-4.0.5.tgz"
   "version" "4.0.5"
@@ -5739,6 +5752,24 @@
     "regex-not" "^1.0.0"
     "snapdragon" "^0.8.1"
     "to-regex" "^3.0.1"
+
+"nativewind@^2.0.0-next.49":
+  "integrity" "sha512-VNkrERYYVDYVj0l205wwjSY4cD3qvBav95pln2zZyyvBblT/VYC3IkSg2Uu6Ioq6pX5cGjb24NZ10QnTs5qYMA=="
+  "resolved" "https://registry.npmjs.org/nativewind/-/nativewind-2.0.0-next.49.tgz"
+  "version" "2.0.0-next.49"
+  dependencies:
+    "@babel/generator" "^7.18.7"
+    "@babel/types" "7.18.8"
+    "css-mediaquery" "^0.1.2"
+    "css-to-react-native" "^3.0.0"
+    "micromatch" "^4.0.5"
+    "postcss" "^8.4.12"
+    "postcss-calc" "^8.2.4"
+    "postcss-color-functional-notation" "^4.2.2"
+    "postcss-css-variables" "^0.18.0"
+    "postcss-nested" "^5.0.6"
+    "react-is" "^18.1.0"
+    "use-sync-external-store" "^1.1.0"
 
 "natural-compare@^1.4.0":
   "integrity" "sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw=="
@@ -6254,6 +6285,30 @@
   "resolved" "https://registry.npmjs.org/posix-character-classes/-/posix-character-classes-0.1.1.tgz"
   "version" "0.1.1"
 
+"postcss-calc@^8.2.4":
+  "integrity" "sha512-SmWMSJmB8MRnnULldx0lQIyhSNvuDl9HfrZkaqqE/WHAhToYsAvDq+yAsA/kIyINDszOp3Rh0GFoNuH5Ypsm3Q=="
+  "resolved" "https://registry.npmjs.org/postcss-calc/-/postcss-calc-8.2.4.tgz"
+  "version" "8.2.4"
+  dependencies:
+    "postcss-selector-parser" "^6.0.9"
+    "postcss-value-parser" "^4.2.0"
+
+"postcss-color-functional-notation@^4.2.2":
+  "integrity" "sha512-2yrTAUZUab9s6CpxkxC4rVgFEVaR6/2Pipvi6qcgvnYiVqZcbDHEoBDhrXzyb7Efh2CCfHQNtcqWcIruDTIUeg=="
+  "resolved" "https://registry.npmjs.org/postcss-color-functional-notation/-/postcss-color-functional-notation-4.2.4.tgz"
+  "version" "4.2.4"
+  dependencies:
+    "postcss-value-parser" "^4.2.0"
+
+"postcss-css-variables@^0.18.0":
+  "integrity" "sha512-lYS802gHbzn1GI+lXvy9MYIYDuGnl1WB4FTKoqMQqJ3Mab09A7a/1wZvGTkCEZJTM8mSbIyb1mJYn8f0aPye0Q=="
+  "resolved" "https://registry.npmjs.org/postcss-css-variables/-/postcss-css-variables-0.18.0.tgz"
+  "version" "0.18.0"
+  dependencies:
+    "balanced-match" "^1.0.0"
+    "escape-string-regexp" "^1.0.3"
+    "extend" "^3.0.1"
+
 "postcss-import@^14.1.0":
   "integrity" "sha512-flwI+Vgm4SElObFVPpTIT7SU7R3qk2L7PyduMcokiaVKuWv9d/U+Gm/QAd8NDLuykTWTkcrjOeD2Pp1rMeBTGw=="
   "resolved" "https://registry.npmjs.org/postcss-import/-/postcss-import-14.1.0.tgz"
@@ -6278,14 +6333,14 @@
     "lilconfig" "^2.0.5"
     "yaml" "^1.10.2"
 
-"postcss-nested@5.0.6":
+"postcss-nested@^5.0.6", "postcss-nested@5.0.6":
   "integrity" "sha512-rKqm2Fk0KbA8Vt3AdGN0FB9OBOMDVajMG6ZCf/GoHgdxUJ4sBFp0A/uMIRm+MJUdo33YXEtjqIz8u7DAp8B7DA=="
   "resolved" "https://registry.npmjs.org/postcss-nested/-/postcss-nested-5.0.6.tgz"
   "version" "5.0.6"
   dependencies:
     "postcss-selector-parser" "^6.0.6"
 
-"postcss-selector-parser@^6.0.10", "postcss-selector-parser@^6.0.6":
+"postcss-selector-parser@^6.0.10", "postcss-selector-parser@^6.0.6", "postcss-selector-parser@^6.0.9":
   "integrity" "sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w=="
   "resolved" "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.0.10.tgz"
   "version" "6.0.10"
@@ -6298,7 +6353,7 @@
   "resolved" "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   "version" "4.2.0"
 
-"postcss@^8.0.0", "postcss@^8.2.14", "postcss@^8.3.3", "postcss@^8.4.14", "postcss@>=8.0.9":
+"postcss@^8.0.0", "postcss@^8.2", "postcss@^8.2.14", "postcss@^8.2.2", "postcss@^8.2.6", "postcss@^8.3.3", "postcss@^8.4.12", "postcss@^8.4.14", "postcss@>=8.0.9":
   "integrity" "sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig=="
   "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.4.14.tgz"
   "version" "8.4.14"
@@ -6472,6 +6527,11 @@
   "version" "16.13.1"
 
 "react-is@^18.0.0":
+  "integrity" "sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w=="
+  "resolved" "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
+  "version" "18.2.0"
+
+"react-is@^18.1.0":
   "integrity" "sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
   "version" "18.2.0"
@@ -6661,7 +6721,7 @@
     "react-shallow-renderer" "^16.13.1"
     "scheduler" "^0.20.2"
 
-"react@*", "react@^16.0.0 || ^17.0.0", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0", "react@^17.0.0", "react@>=16.0", "react@>=16.8.0", "react@17.0.2":
+"react@*", "react@^16.0.0 || ^17.0.0", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.0", "react@>=16.0", "react@>=16.8.0", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
@@ -7610,7 +7670,23 @@
     "css-to-react-native" "^3.0.0"
     "meow" "^7.0.1"
 
-"tailwindcss@^3.0.0", "tailwindcss@^3.1.6":
+"tailwindcss-react-native@^1.7.10":
+  "integrity" "sha512-Vw1MsIQ6owW5k5sOtNscEOuRjbKds7mkD6Wi2B92hq8JmcphG+ke8xsViP2PpMKDQ2tXP8SBunax2pmC7yx5lQ=="
+  "resolved" "https://registry.npmjs.org/tailwindcss-react-native/-/tailwindcss-react-native-1.7.10.tgz"
+  "version" "1.7.10"
+  dependencies:
+    "@babel/types" "7.18.2"
+    "css-mediaquery" "^0.1.2"
+    "css-to-react-native" "^3.0.0"
+    "micromatch" "^4.0.5"
+    "postcss" "^8.4.12"
+    "postcss-calc" "^8.2.4"
+    "postcss-color-functional-notation" "^4.2.2"
+    "postcss-css-variables" "^0.18.0"
+    "postcss-nested" "^5.0.6"
+    "react-is" "^18.1.0"
+
+"tailwindcss@^3.0.0", "tailwindcss@^3.1.6", "tailwindcss@~3":
   "integrity" "sha512-7skAOY56erZAFQssT1xkpk+kWt2NrO45kORlxFPXUt3CiGsVPhH1smuH5XoDH6sGPXLyBv+zgCKA2HWBsgCytg=="
   "resolved" "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.1.6.tgz"
   "version" "3.1.6"
@@ -7931,6 +8007,11 @@
   "version" "1.5.1"
   dependencies:
     "object-assign" "^4.1.1"
+
+"use-sync-external-store@^1.1.0":
+  "integrity" "sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA=="
+  "resolved" "https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz"
+  "version" "1.2.0"
 
 "use@^3.1.0":
   "integrity" "sha512-cwESVXlO3url9YWlFW/TA9cshCEhtu7IKJ/p5soJ/gGpj7vbvFrAY/eIioQ6Dw23KjZhYgiIo8HOs1nQ2vr/oQ=="

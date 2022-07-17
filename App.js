@@ -16,9 +16,6 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import {TailwindProvider} from 'tailwind-rn';
-import utilities from './tailwind.json';
-
 import {
   Colors,
   DebugInstructions,
@@ -27,7 +24,6 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import {useTailwind} from 'tailwind-rn';
 
 const Section = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -61,9 +57,7 @@ const App = () => {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
-  const tailwind = useTailwind();
   return (
-    <TailwindProvider utilities={utilities}>
       <SafeAreaView style={backgroundStyle}>
         <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
         <ScrollView
@@ -87,15 +81,18 @@ const App = () => {
               <DebugInstructions />
             </Section>
             <Section title="Learn More">
+              <Text className="bg-red-500">This is colored txt</Text>
               Read the docs to discover what to do next:
-              <Text style={tailwind('text-blue-600')}>Hello world</Text>
             </Section>
             <LearnMoreLinks />
-            <Text style={tailwind('text-red-600')}>Hello ssssssssssssssssss</Text>
+            <View className="flex-1 items-center justify-center bg-white">
+              <Text>Open up App.js to start working on your app!</Text>
+              <StatusBar style="auto" />
+            </View>
+            <Text className="bg-red-500">This is colored txt</Text>
           </View>
         </ScrollView>
       </SafeAreaView>
-    </TailwindProvider>
   );
 };
 
